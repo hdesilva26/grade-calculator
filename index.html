@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Calculator | Weighted</h1>
+        <form id="gradeForm">
+            <div id="topicsContainer">
+                <h2>Topics</h2>
+                <div class="topic">
+                    <input type="text" placeholder="Topic Name" class="topic-name" required>
+                    <input type="number" placeholder="Score" class="topic-score" required>
+                    <input type="number" placeholder="Weight" class="topic-weight" required step="0.01">
+                    <button type="button" onclick="removeTopic(this)">-</button>
+                </div>
+            </div>
+            <button type="button" id="addTopic">Add Topic</button>
+            <button type="submit">Calculate Grade</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
